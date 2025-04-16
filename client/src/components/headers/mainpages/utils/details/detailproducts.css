@@ -1,0 +1,84 @@
+/* Detail Product Page Styling */
+.imagecard {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+/* Image Styling */
+.imagecard img {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product Info Section */
+.imagecard > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 20px;
+}
+
+.imagecard h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.imagecard span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.imagecard p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+
+
+/* Keyframes */
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+/* Responsive Adjustments (kept consistent size for mobile) */
+@media (max-width: 768px) {
+    .imagecard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagecard img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .imagecard > div {
+        padding: 10px;
+    }
+
+    .cart {
+        font-size: 16px; /* Keep the font size fixed */
+        padding: 12px 20px; /* Keep padding the same */
+    }
+}

@@ -1,0 +1,59 @@
+/* Global Resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* App Container */
+.App {
+  max-width: 1230px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+/* Common Elements */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Accessible Focus Style */
+button:focus,
+a:focus {
+  outline: 2px solid royalblue;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Imports - Modular CSS */
+@import url('./components/headers/header.css');
+@import url('./components/mainpages/products/products.css');
+@import url('./components/mainpages/utils/Detailproducts/detailproduct.css'); 
+@import url("./components/mainpages/login/LLogin/login.css");
