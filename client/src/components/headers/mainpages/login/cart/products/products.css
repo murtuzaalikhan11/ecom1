@@ -1,0 +1,13 @@
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px; /* Space between items */
+    justify-items: center;
+    align-items: start;
+    margin: 20px 0; 
+    display: flex; 
+  }
+  
+
+@import url("../utils/ProductList/productlist.css");
